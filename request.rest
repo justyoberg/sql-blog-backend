@@ -1,0 +1,13 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "author": "Awberg",
+  "url": "newurl.com",
+  "title": "Post request test",
+  "likes": 0
+}
+###
+
+DELETE http://localhost:3001/api/blogs/15132
+Content-Type: application/json
