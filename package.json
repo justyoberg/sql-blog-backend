@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon src/index.js",
     "db": "flyctl proxy 5432 -a sql-blog-backend-db",
     "db-console": "flyctl postgres connect -a sql-blog-backend-db",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
     "pg": "^8.13.0",
     "sequelize": "^6.37.4"
   },
